@@ -20,6 +20,16 @@ count                          find          isdigit    join       replace      
 </pre>
 
 
+<pre>
+data = {'id': 1, 'name': 'jen'}
+>>> p.json(data)
+{
+  "id": 1,
+  "username": "jen-soft"
+}
+</pre>
+
+
 # license 
 Licensed under the Apache License, Version 2.0 
 <pre>http://www.apache.org/licenses/LICENSE-2.0</pre>
