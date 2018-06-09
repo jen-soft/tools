@@ -2,7 +2,7 @@
 Short tools for using in interactive-python
 
 # install 
-<pre>sudo wget raw.githubusercontent.com/jen-soft/tools/master/p.py  "$(python -m site --user-site)/p.py"</pre>
+<pre>sudo wget -v -N raw.githubusercontent.com/jen-soft/tools/master/p.py  "$(python -m site --user-site)/p.py"</pre>
 
 # using 
 ```python
