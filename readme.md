@@ -21,7 +21,7 @@ count                          find          isdigit    join       replace      
 
 
 <pre>
-data = {'id': 1, 'name': 'jen'}
+>>> data = {'id': 1, 'name': 'jen'}
 >>> p.json(data)
 {
   "id": 1,
