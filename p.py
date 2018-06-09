@@ -12,17 +12,16 @@
 
    description: short tools for using in interactive-python
 
-   features:
-       import p
-# - - -
-       p.dir(obj)  # return all publick atters from object
-       #  p.dir( str, True, 7 )
-# - - -
+   import p
 """
 import math
 
 
-print(__doc__.split('import p')[1])
+print("""
+# - - -
+     p.dir(obj)  # print all publick atters from object
+     # p.dir( str, True, 7 )
+""".strip())
 
 
 class origin:
@@ -63,6 +62,24 @@ def dir(obj, show_private=False, count_columns=5):
     print('\n')
 
 
+import json as _json
+print("""
+# - - -
+     p.json(obj)  # print structured dates: dict, list, set, tuple
+     # p.json({'id': 1, 'name': 'jen'})
+""".strip())
+
+def json(data):
+    print(_json.dumps(data, indent=2, ensure_ascii=False))
+
+
+
+print("""
+# - - -
+""".strip()+'\n')
+
+
 if __name__ == '__main__':
     dir(str, True)
+    json({'id': 1, 'username': 'jen-soft'})
 
